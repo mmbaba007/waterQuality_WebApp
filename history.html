@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Water Quality History</h1>
+        <nav>
+            <a href="index.html">Latest Data</a>
+            <a href="history.html">History</a>
+        </nav>
+    </header>
+
+    <main>
+        <button id="downloadBtn">Download as Excel</button>
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>Date & Time</th>
+                    <th>pH</th>
+                    <th>Temperature (°C)</th>
+                    <th>Turbidity</th>
+                    <th>Water Level (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="5">Loading history...</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        loadHistoryData();
+        document.getElementById("downloadBtn").addEventListener("click", downloadHistoryExcel);
+    </script>
+</body>
+</html>
