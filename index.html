@@ -14,29 +14,28 @@
         <h1><i class="fas fa-water"></i> Water Quality Monitoring</h1>
     </header>
 
-    <section id="settings" style="margin-top: 20px;">
+    <section id="settings" style="margin-top: 20px; padding: 50px;">
     <h2><i class="fas fa-sliders-h"></i> Control Limits</h2>
     <div class="settings-grid">
-        <div>
+        <div style="padding: 20px;">
             <label>pH Low</label>
             <input type="number" id="phLow" step="0.1">
         </div>
-        <div>
+        <div style="padding: 20px;">
             <label>pH High</label>
             <input type="number" id="phHigh" step="0.1">
         </div>
-        <div>
+        <div style="padding: 20px;">
             <label>TDS Low</label>
             <input type="number" id="tdsLow" step="1">
         </div>
-        <div>
+        <div style="padding: 20px;">
             <label>TDS High</label>
             <input type="number" id="tdsHigh" step="1">
         </div>
     </div>
     <button id="saveLimits"><i class="fas fa-save"></i> Save</button>
 </section>
-
 
     <section id="latestSection">
         <h2>Latest Readings</h2>
@@ -75,3 +74,4 @@
     <script src="app.js"></script>
 </body>
 </html>
+
